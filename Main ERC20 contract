@@ -40,8 +40,8 @@ function mint(uint amount)external{
  }
  //the burn function is the opposite of the mint function
  function burn(uint amount) external{
-     balanceOf[msg.sender] -=amount; //this will descrease the total supply
-     totalSupply -=amount;
+     balanceOf[msg.sender] -=amount; 
+     totalSupply -=amount; //this will decrease the total supply
      emit Transfer(msg.sender, address(0),amount);
  }
 }
